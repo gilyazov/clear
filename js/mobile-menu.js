@@ -1,6 +1,8 @@
 //mobile menu scripts
 
 
+console.log('Mobile menu scripts')
+
 function openMobileMenu(){
     $('body').addClass('mobile-menu-opened');
     $('.mobile-menu').css('display','block');
@@ -17,6 +19,6 @@ function closeMobileMenu(){
     },150);
 }
 
-$('.burger.d-xl-none').on('click',openMobileMenu);
+$('.burger.d-lg-none').on('click',openMobileMenu);
 $('.mobile-menu .close-block a').on('click',closeMobileMenu)
 $('.mobile-menu .bg').on('click',closeMobileMenu)

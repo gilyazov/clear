@@ -144,6 +144,12 @@ if (!$("body").hasClass("is-admin")) {
     let $procedSliderContainer = $(this);
     let $procedSlider = $(this).find(".owl-carousel");
 
+
+    let vanillaContainer = $procedSliderContainer[0];
+    const slides = Array.prototype.slice.call(vanillaContainer.querySelectorAll('.owl-item'));
+
+    
+
     $procedSlider.owlCarousel({
       dots: true,
       margin: 0,
